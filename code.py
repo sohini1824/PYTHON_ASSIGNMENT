@@ -63,6 +63,10 @@ def display_codon_table():
 
     print("Total codons:", len(codon_table))
 
+def translate_sequence(sequence):
+    sequence = "".join(sequence.split()).upper()
 
-
+    if not sequence:
+        print("Error: The sequence cannot be empty.")
+        return
 
