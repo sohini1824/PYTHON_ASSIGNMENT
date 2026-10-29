@@ -80,4 +80,7 @@ def translate_sequence(sequence):
     if any(base not in "ATGC" for base in sequence):
         print("Error: Use only A, T, G, or C.")
         return
+    if "T" in sequence and "U" in sequence:
+        print("Error: Do not mix T and U in one sequence.")
+        return
 
