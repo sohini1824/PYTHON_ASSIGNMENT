@@ -144,4 +144,12 @@ def translate_sequence(sequence):
 
     for i in range(len(codons)):
         print(f"{display_codons[i]:<10}{amino_acids[i]:<20}")
+print("WELCOME TO THE CODON TABLE GENERATOR")
 
+display_codon_table()
+
+print("\nEnter a DNA or RNA sequence.")
+
+user_sequence = input("Sequence: ")
+
+translate_sequence(user_sequence)
