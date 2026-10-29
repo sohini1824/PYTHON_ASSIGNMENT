@@ -110,4 +110,13 @@ def translate_sequence(sequence):
     print("\n========== TRANSLATION RESULTS ==========")
 
     print("Input sequence:", sequence)
+     # Display codons in the original DNA/RNA format
+    if "U" in sequence:
+        display_codons = [codon.replace("T", "U") for codon in codons]
+    else:
+        display_codons = codons
+
+    print("\nCodons:", " - ".join(display_codons))
+
+    print("Amino acids:", " - ".join(amino_acids))
 
