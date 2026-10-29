@@ -83,4 +83,17 @@ def translate_sequence(sequence):
     if "T" in sequence and "U" in sequence:
         print("Error: Do not mix T and U in one sequence.")
         return
+      # Convert RNA into the equivalent DNA alphabet
+    dna_sequence = sequence.replace("U", "T")
+
+    # Divide the sequence into groups of three
+    codons = []
+
+    for i in range(0, len(dna_sequence), 3):
+        codon = dna_sequence[i:i + 3]
+
+        if len(codon) == 3:
+            codons.append(codon)
+        else:
+            print("\nIncomplete codon at the end:", codon)
 
