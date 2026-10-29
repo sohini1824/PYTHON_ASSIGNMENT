@@ -70,3 +70,14 @@ def translate_sequence(sequence):
         print("Error: The sequence cannot be empty.")
         return
 
+def translate_sequence(sequence):
+    sequence = "".join(sequence.split()).upper()
+
+    if not sequence:
+        print("Error: The sequence cannot be empty.")
+        return
+
+    if any(base not in "ATGC" for base in sequence):
+        print("Error: Use only A, T, G, or C.")
+        return
+
