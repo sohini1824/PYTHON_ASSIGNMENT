@@ -96,4 +96,14 @@ def translate_sequence(sequence):
             codons.append(codon)
         else:
             print("\nIncomplete codon at the end:", codon)
+             # Stop if there are no complete codons
+    if not codons:
+        print("No complete codons available for translation.")
+        return
+
+    # Translate each codon
+    amino_acids = []
+
+    for codon in codons:
+        amino_acids.append(codon_table[codon])
 
