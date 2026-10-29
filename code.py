@@ -119,4 +119,9 @@ def translate_sequence(sequence):
     print("\nCodons:", " - ".join(display_codons))
 
     print("Amino acids:", " - ".join(amino_acids))
+     # Identify start codons
+    if codons[0] == "ATG":
+        print("Start codon:", display_codons[0])
+    else:
+        print("Start codon: Not present at the beginning")
 
