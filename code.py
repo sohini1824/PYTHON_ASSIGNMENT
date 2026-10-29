@@ -47,5 +47,22 @@ codon_table = {
     "GGA": "Glycine", "GGG": "Glycine",
 }
 
+def display_codon_table():
+    print("\n========== STANDARD CODON TABLE ==========")
+
+    for codon in sorted(codon_table):
+        print(codon, ":", codon_table[codon])
+
+    print("Total codons:", len(codon_table))
+
+def display_codon_table():
+    print("\n========== STANDARD CODON TABLE ==========")
+
+    for codon in sorted(codon_table):
+        print(codon, ":", codon_table[codon])
+
+    print("Total codons:", len(codon_table))
+
+
 
 
