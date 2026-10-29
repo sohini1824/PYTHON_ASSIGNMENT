@@ -106,4 +106,8 @@ def translate_sequence(sequence):
 
     for codon in codons:
         amino_acids.append(codon_table[codon])
+         # Display results
+    print("\n========== TRANSLATION RESULTS ==========")
+
+    print("Input sequence:", sequence)
 
