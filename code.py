@@ -137,4 +137,11 @@ def translate_sequence(sequence):
         print("Stop codon(s):", ", ".join(found_stops))
     else:
         print("Stop codon: Not found")
+ # Display a codon-by-codon table
+    print("\n========== CODON DETAILS ==========")
+    print(f"{'Codon':<10}{'Amino Acid':<20}")
+    print("-" * 30)
+
+    for i in range(len(codons)):
+        print(f"{display_codons[i]:<10}{amino_acids[i]:<20}")
 
