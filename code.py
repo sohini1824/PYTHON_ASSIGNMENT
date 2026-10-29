@@ -124,4 +124,17 @@ def translate_sequence(sequence):
         print("Start codon:", display_codons[0])
     else:
         print("Start codon: Not present at the beginning")
+ # Identify stop codons
+    stop_codons = ["TAA", "TAG", "TGA"]
+
+    found_stops = []
+
+    for i in range(len(codons)):
+        if codons[i] in stop_codons:
+            found_stops.append(display_codons[i])
+
+    if found_stops:
+        print("Stop codon(s):", ", ".join(found_stops))
+    else:
+        print("Stop codon: Not found")
 
